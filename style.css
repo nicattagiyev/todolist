@@ -1,0 +1,128 @@
+ body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,130,159,1) 0%, rgba(103,56,96,1) 90% );
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+}
+.container .to-do{
+margin-top: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.container .to-do input{
+    padding: 5px 70px 5px 5px;
+    outline: none !important;
+    width: 50%;
+}
+.container .to-do .btn{
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none !important;
+    outline: none !important;
+    background-image: radial-gradient( circle 627px at 16.2% 74.3%,  rgba(57,145,204,1) 89.9%, #bbb 90% );
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.container .to-do .clearall{
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none !important;
+    outline: none !important;
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.container .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0px;
+}
+.container .list li{
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
+list-style: none;
+margin-top: 10px;
+width: 90%;
+padding: 5px 0px 5px 8px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+
+.container .list li span{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+right: 55px;
+cursor: pointer;
+font-size: 14px;
+color: red;
+   
+}
+.container .list li p{
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   right: 90px;
+   cursor: pointer;
+   font-size: 14px;  
+color: green;
+}
+.container .result{
+    width: 100%;
+    margin-top: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.container h3{
+margin-top: 40px;
+letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .container .to-do{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        }
+        .container .to-do input{
+            width: 90%;
+        }
+        .container .to-do button{
+            margin-top: 10px;
+        }
+        .container .list{
+            width: 90%;
+            padding: 0px;
+        }
+}
